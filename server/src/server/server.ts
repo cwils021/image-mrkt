@@ -1,6 +1,6 @@
 import express, {Request, Response} from 'express';
 import cors from 'cors';
-
+import ServerRouter from '@src/routes/ServerRouter';
 const server = express();
 server.use(cors());
 server.use(express.json());

@@ -19,7 +19,7 @@ describe('Testing server connections', () => {
   });
 
   it('Tests server is running', async (done) => {
-    const reponse = await request.get('/').expect(200);
+    const reponse = await request.get('/');
     expect(reponse.status).toBe(200);
     done();
   });

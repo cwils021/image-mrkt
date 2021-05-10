@@ -1,10 +1,10 @@
 /* eslint-disable no-process-env */
-// import server from '@src/server/server';
 import dotenv from 'dotenv-safe';
+import server from '@src/server/server';
 
 dotenv.config();
 
-const DB_URL = `${process.env.TEST_DB}`;
-
-console.log(DB_URL);
-console.log(process.env.TEST_DB);
+const PORT = process.env.PORT || 5000;
+server.listen(PORT, () => {
+  console.log(`Server Running on PORT:${PORT}`);
+});

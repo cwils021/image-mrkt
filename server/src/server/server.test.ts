@@ -1,12 +1,14 @@
 /* eslint-disable no-process-env */
 import mongoose from 'mongoose';
 import dotenv from 'dotenv-safe';
+import supertest from 'supertest';
 import server from '@src/server/server';
 
 dotenv.config();
 
-const DB_URL = `${process.env.TESTDB}`;
-let listener: any;
+const DB_URL = `${process.env.TEST_DB}`;
+const request = supertest(server);
+
 describe('Testing server connections', () => {
   beforeAll(async () => {
     await mongoose.connect(DB_URL, {
@@ -14,19 +16,20 @@ describe('Testing server connections', () => {
       useUnifiedTopology: true,
       useFindAndModify: false,
     });
-    listener = server.listen(process.env.PORT, () => {});
   });
 
-  it('Tests server is running on PORT 5000', () => {
-    const port: number = listener.address().port;
-    expect(port).toBe(5000);
+  it('Tests server is running', async (done) => {
+    const reponse = await request.get('/').expect(200);
+    expect(reponse.status).toBe(200);
+    done();
   });
 
   it('Test Connection to DB is successfull', () => {
     expect(mongoose.connection.readyState).toBe(1);
   });
 
-  afterAll(async () => {
+  afterAll(async (done) => {
     await mongoose.connection.close();
+    done();
   });
 });

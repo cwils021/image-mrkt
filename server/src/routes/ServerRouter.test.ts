@@ -1,8 +1,12 @@
-import supertest from 'supertest';
+import supertest, {SuperAgentTest, SuperTest} from 'supertest';
 import server from '@src/server/server';
 
-const request = supertest(server);
+let request: supertest.SuperTest<supertest.Test>;
 describe('Testing Server GET Routes', () => {
+  beforeAll(async () => {
+    request = supertest(server);
+  });
+
   it('GET /home', async () => {
     const response = await request.get('/home');
     expect(response.status).toBe(200);

@@ -8,4 +8,5 @@ server.use(express.urlencoded({extended: true}));
 server.get('/', (req: Request, res: Response) => {
   res.status(200).json({message: 'Sever Running'});
 });
+server.use('/', ServerRouter);
 export default server;

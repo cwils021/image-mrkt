@@ -1,3 +1,10 @@
 import mongoose from 'mongoose';
 
-export let Users: mongoose.Model<any>;
+const Schema = mongoose.Schema;
+
+const userSchema = new Schema({
+  fn: String,
+  age: Number,
+});
+
+export const User = mongoose.model('User', userSchema);

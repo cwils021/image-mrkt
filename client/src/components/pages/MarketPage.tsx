@@ -5,7 +5,7 @@
 
 const MarketPage = () => {
     return (
-        <h1>MarketPlace</h1>
+        <h1>Marketplace</h1>
     );
 };
 

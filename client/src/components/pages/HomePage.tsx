@@ -15,8 +15,8 @@ const HomePage = () => {
             <Grow in>
              <Container>
                  <Grid container direction='row'  justify="space-around" alignItems="center" spacing={3}>
-                    <Grid item xs={12} md={4}>Test 1</Grid>
-                    <Grid item xs={12} md={4}>Test 2</Grid>
+                    <Grid item xs={12} md={4}><img src="https://picsum.photos/200?random=1" alt="Random"  /></Grid>
+                    <Grid item xs={12} md={4}><img src="https://picsum.photos/200?random=2" alt="Random2" /></Grid>
                     <Grid item xs={12} md={4}>Test 3</Grid>
                     <Grid item xs={12} md={4}>Test 4</Grid>
                     <Grid item xs={12} md={4}>Test 5</Grid>

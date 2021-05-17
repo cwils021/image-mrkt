@@ -10,15 +10,15 @@ import  AccountPage  from './components/pages/AccountPage';
 
 function App() {
   return (
-   <div>
+   <>
     <Router>
       <div className="App">
         <Switch>
           <Route path='/Account' component={AccountPage} />
-        </Switch>  
+        </Switch>
       </div>
-     </Router> 
-  </div> 
+     </Router>
+  </>
   );
 }
 

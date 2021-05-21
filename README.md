@@ -23,10 +23,15 @@ __Coming Soon__
 ### Server
 
 `yarn start` -> start dev server on localhost:5000
+
 `yarn start:prod` -> start production server
+
 `yarn test` -> Run Jest test suite
+
 `yarn test:watch` -> run Jest in watch mode
+
 `yarn test:coverage` -> run Jest coverage tests
+
 `yarn build` -> compile TS code and build
 
 ### Client

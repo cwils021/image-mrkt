@@ -37,8 +37,11 @@ __Coming Soon__
 ### Client
 
 `yarn start` -> start dev server on localhost:3000
+
 `yarn build` -> build production
+
 `yarn test` -> Run Jest on watch mode
+
 `yarn eject` -> Eject create-react-app scripts (DANGER: CANNOT UNDO)
 
 ## RoadMap

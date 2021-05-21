@@ -47,7 +47,7 @@ module.exports = {
         // Choose from one of the "project" configs below or omit to use <root>/tsconfig.json by default
 
         // use <root>/path/to/folder/tsconfig.json
-        project: './tsconfig.json',
+        project: './server/tsconfig.json',
       },
     },
   },

@@ -1,10 +1,12 @@
 import mongoose from 'mongoose';
 
-const Schema = mongoose.Schema;
+const {Schema} = mongoose;
 
 const userSchema = new Schema({
-  fn: String,
-  age: Number,
+  username: {type: String, required: true},
+  imageLinks: [String],
+  balance: {type: Number, default: 0},
 });
 
-export const User = mongoose.model('User', userSchema);
+const Users = mongoose.model('Users', userSchema);
+export default Users;

@@ -54,4 +54,5 @@ __Coming Soon__
 - [ ] Add User Auth
 - [ ] Add "Upload Custom Image" Feature
 - [ ] Add "Auction" Feature
+- [ ] Setup a basic CI/CD WF with GH Actions
 

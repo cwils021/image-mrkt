@@ -7,10 +7,6 @@ server.use(cors());
 server.use(express.json());
 server.use(express.urlencoded({extended: true}));
 server.get('/status', (req: Request, res: Response) => {
-  res
-    .status(200)
-    // eslint-disable-next-line no-process-env
-    .json({message: `Server Running, DB String => ${process.env.TEST_DB}`});
+  res.status(200).json({message: 'Server Running'});
 });
-server.use('/', ServerRouter);
 export default server;

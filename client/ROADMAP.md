@@ -2,10 +2,10 @@
 
 ## Skeleton Components
 
-- [ ] HomePage
-- [ ] AccountPage
-- [ ] MarketPage
-- [ ] NavBar
-- [ ] Buy Button
-- [ ] Image Card
+- [x] HomePage
+- [x] AccountPage
+- [x] MarketPage
+- [x] NavBar
+- [x] Buy Button
+- [x] Image Card
 - [ ] Card Pack

@@ -16,14 +16,20 @@ const NavBar = () => {
                     </h3>
             </div>
             <div className='navlink-container'>
-                <ul>
-                    <li className='nav-links'>
-                        <Link to="/Account">Account</Link>
-                    </li>
-                    <li className='nav-links'>
-                        <Link to="/Market">Marketplace</Link>
-                    </li>
-                </ul>
+                <h3 className='nav-links'>
+                    <Link to="/Account">Account</Link>
+                </h3>
+                <h3 className='nav-links'>
+                    <Link to="/Market">Marketplace</Link>
+                </h3>
+            </div>
+            <div id="user-items" className='navlink-container'>
+                    <h3 className='nav-links'>
+                        <Link to="/Account">$$$</Link>
+                    </h3>
+                    <h3 className='nav-links'>
+                        <Link to="/Account">Username</Link>
+                    </h3>
             </div>
         </div>
     );

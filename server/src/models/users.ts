@@ -1,5 +1,5 @@
 export default interface User {
-  username?: String;
+  username?: string;
   balance?: number;
-  imageLinks?: String[];
+  imageLinks?: string[];
 }

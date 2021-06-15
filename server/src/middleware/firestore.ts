@@ -15,19 +15,19 @@ Firestore.settings(settings);
 
 export const sendUserDataToFirestore = async (data: User): Promise<void> => {
   try {
-    await Firestore.collection('Users').add(data);
-    console.log('data sent to DB');
+    const res = await Firestore.collection('Users').add(data);
+    console.log(`data sent to DB with id: ${res.id}`);
   } catch (error) {
     console.log(error);
   }
 };
 
-export const getFirestoreData = async (): Promise<void> => {
+export const getFirestoreData = async (collection: string): Promise<void> => {
   try {
-    const res = await Firestore.collection('testCollection')
-      .doc('TestDoc')
-      .get();
-    console.log(res.data());
+    const res = await Firestore.collection(collection).get();
+    res.forEach((doc) => {
+      console.log(`${doc.id}: ${doc.data()}`);
+    });
   } catch (error) {
     console.log(error);
   }

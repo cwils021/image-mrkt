@@ -9,5 +9,12 @@ const collectionRef = Firestore.collection('Users');
 const PORT = 5000;
 
 server.listen(PORT, () => {
-  console.log(`Server running on PORT:${PORT}`);
+  try {
+    console.log(`Server running on PORT:${PORT}`);
+    sendUserDataToFirestore({username: 'Cwils021'}).then(() =>
+      getFirestoreData('Users'),
+    );
+  } catch (error) {
+    console.log(error);
+  }
 });

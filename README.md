@@ -17,7 +17,13 @@ __Coming Soon__
 
 ### Using Docker
 
-__Coming Soon__
+#### Client
+
+`cd client`
+
+`$ docker build -t imge-mrkt-client .`
+
+`$ docker run -it -p 3000:3000 --rm imge-mrkt-client`
 
 ## Run Instructions
 
@@ -47,7 +53,7 @@ __Coming Soon__
 
 ## RoadMap
 
-- [ ] Dockerize for development
+- [x] Dockerize for development
 - [ ] Deploy basic demo 
 - [ ] Add "Sell on Marketplace" Feature
 - [ ] Add "Offer for Trade" Feature

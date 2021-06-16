@@ -1,0 +1,33 @@
+.navbar-container {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%
+}
+.home-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    height: 100%;
+}
+
+.navlink-container {
+    display: inline-flex;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+}
+.nav-links {
+    color: #fff;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    height: 100%;
+  }
+  #user-items {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+  }

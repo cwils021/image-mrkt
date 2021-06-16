@@ -1,5 +1,6 @@
 # image-mrkt
 
+
 ## Demo Site
 
 __Coming Soon__
@@ -16,7 +17,13 @@ __Coming Soon__
 
 ### Using Docker
 
-__Coming Soon__
+#### Client
+
+`cd client`
+
+`$ docker build -t imge-mrkt-client .`
+
+`$ docker run -it -p 3000:3000 --rm imge-mrkt-client`
 
 ## Run Instructions
 
@@ -46,7 +53,7 @@ __Coming Soon__
 
 ## RoadMap
 
-- [ ] Dockerize for development
+- [x] Dockerize for development
 - [ ] Deploy basic demo 
 - [ ] Add "Sell on Marketplace" Feature
 - [ ] Add "Offer for Trade" Feature
@@ -54,5 +61,8 @@ __Coming Soon__
 - [ ] Add User Auth
 - [ ] Add "Upload Custom Image" Feature
 - [ ] Add "Auction" Feature
-- [ ] Setup a basic CI/CD WF with GH Actions
+- [x] Setup a basic CI/CD WF with GH Actions
+
+=================================================================================================
+
 
